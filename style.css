@@ -602,3 +602,29 @@ nav>.container{
 }
 
 /* #endregion nav */
+
+/* #region main */
+
+main>.container{
+    background-color: var(--col-bg);
+    height: 80vh;
+    float: right;
+    width: calc(100% - 250px);
+
+    @media (max-width: 576px) {
+        width: 90%;
+    }
+}
+
+/* #endregion main */
+
+/* #region footer */
+
+footer>.container{
+    height: 10vh;
+    background-color: var(--col-bg-footer);
+    width: 100vw;
+    float: left;
+}
+
+/* #endregion footer */
