@@ -779,6 +779,8 @@ main>.container{
     width: calc(100% - 250px);
     padding: 1rem;
     overflow-y: scroll;
+    scroll-behavior: smooth;
+    scrollbar-width: thin
 
     p {
         color: var(--secondary);
@@ -844,6 +846,10 @@ main>.container{
     font-size: 0.8rem;
 }
 
+.circule{
+    border-radius: 50%;
+}
+
 .heavy-metal{
     background-image: url(./img/metal_lifting.jpg);
 }
@@ -874,6 +880,14 @@ main>.container{
 
 .daily-mix{
     background-image: url(./img/mixdaily.jpeg);
+}
+
+.youg{
+    background-image: url(./img/youg.jpeg);
+}
+
+.einaudi{
+    background-image: url(./img/einaudi.jpeg);
 }
 
 /* #endregion main */
