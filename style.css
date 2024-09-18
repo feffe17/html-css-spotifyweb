@@ -780,6 +780,11 @@ main>.container{
     padding: 1rem;
     overflow-y: scroll;
 
+    p {
+        color: var(--secondary);
+        font-size: 0.8rem;
+    }
+
     @media (max-width: 576px) {
         width: 90%;
     }
@@ -801,7 +806,7 @@ main>.container{
 }
 
 .container>h2{
-    margin: 1rem 0;
+    margin: 1rem 0 0.8rem 0;
     font-weight: 700;
 }
 
@@ -861,6 +866,14 @@ main>.container{
 
 .sinister{
     background-image: url(./img/sinister.jpeg);
+}
+
+.release-radar{
+    background-image: url(./img/radar.jpeg);
+}
+
+.daily-mix{
+    background-image: url(./img/mixdaily.jpeg);
 }
 
 /* #endregion main */
