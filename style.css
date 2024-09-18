@@ -595,10 +595,90 @@ nav>.container{
     width: 250px;
     float: left;
     display: inline-block;
+    padding: 1rem;
+    position: relative;
 
     @media (max-width: 576px) {
         width: 10%;
+        padding: 0.5rem;
     }
+}
+
+.logo-big , .logo-small{
+    margin-bottom: 1.5rem;
+}
+
+.home>svg{
+    fill: var(--primary);
+}
+
+.icon{
+    margin-bottom: 0.7rem;
+}
+
+.home>p{
+    font-size: 1rem;
+    font-weight: 700;
+    margin-left: 0.5rem;
+}
+
+.search>svg , .library>svg , .download>svg{
+    fill: var(--secondary);
+}
+
+.search>p , .library>p , .download>p{
+    font-size: 1rem;
+    color: var(--secondary);
+    margin-left: 0.5rem;
+}
+
+.playlist>h3{
+    color: white;
+    font-size: 1.2rem;
+    padding-top: 1rem;
+}
+
+.playlist>ul{
+
+    list-style: none;
+
+    li {
+        fill: var(--secondary);
+        color: var(--secondary);
+        font-size: 1rem;
+        margin-top: 0.5rem;
+
+        p {
+            margin-left: 0.5rem;
+        }
+    }
+}
+
+.profile{
+    position: absolute;
+    bottom: 0;
+}
+
+.download{
+    border-bottom: 1px solid var(--secondary);
+    padding-bottom: 1rem;
+}
+
+.user{
+    margin: 1rem 0;
+}
+
+.user>svg{
+    fill: var(--primary);
+    background-color: var(--secondary);
+    border-radius: 50%;
+}
+
+.user>p{
+    font-size: 1rem;
+    font-weight: 700;
+    margin-left: 0.5rem;
+    
 }
 
 /* #endregion nav */
