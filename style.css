@@ -614,6 +614,12 @@ nav>.container{
 
 .icon{
     margin-bottom: 0.7rem;
+    cursor: pointer;
+}
+
+.icon:hover svg , .icon:hover p{
+    fill: white;
+    color: white;
 }
 
 .home>p{
@@ -647,10 +653,16 @@ nav>.container{
         color: var(--secondary);
         font-size: 1rem;
         margin-top: 0.5rem;
+        cursor: pointer;
 
         p {
             margin-left: 0.5rem;
         }
+    }
+
+    li:hover svg , li:hover p{
+        color: white;
+        fill: white;
     }
 }
 
@@ -662,6 +674,12 @@ nav>.container{
 .download{
     border-bottom: 1px solid var(--secondary);
     padding-bottom: 1rem;
+    cursor: pointer;
+}
+
+.download:hover svg , .download:hover p{
+    fill: white;
+    color: white;
 }
 
 .user{
