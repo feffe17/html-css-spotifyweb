@@ -35,65 +35,6 @@
     flex-wrap: wrap;
 }
 
-@media screen and (min-width: 460px){
-    
-    .hide-min-xs{
-        display: none;
-    }
-
-    .show-min-xs{
-        display: block;
-    }
-    
-    .col-min-xs-1{
-        width: calc((100% / 12)*1);
-    }
-
-    .col-min-xs-2{
-        width: calc((100% / 12)*2);
-    }
-
-    .col-min-xs-3{
-        width: calc((100% / 12)*3);
-    }
-
-    .col-min-xs-4{
-        width: calc((100% / 12)*4);
-    }
-
-    .col-min-xs-5{
-        width: calc((100% / 12)*5);
-    }
-
-    .col-min-xs-6{
-        width: calc((100% / 12)*6);
-    }
-
-    .col-min-xs-7{
-        width: calc((100% / 12)*7);
-    }
-
-    .col-min-xs-8{
-        width: calc((100% / 12)*8);
-    }
-
-    .col-min-xs-9{
-        width: calc((100% / 12)*9);
-    }
-
-    .col-min-xs-10{
-        width: calc((100% / 12)*10);
-    }
-
-    .col-min-xs-11{
-        width: calc((100% / 12)*11);
-    }
-
-    .col-min-xs-12{
-        width: calc((100% / 12)*12);
-    }
-}
-
 @media screen and (min-width: 576px){
     
     .hide-min-sm{
@@ -401,65 +342,6 @@
 
 }
 
-@media screen and (max-width: 460px){
-    
-    .hide-max-xs{
-        display: none;
-    }
-
-    .show-max-xs{
-        display: block;
-    }
-    
-    .col-max-xs-1{
-        width: calc((100% / 12)*1);
-    }
-
-    .col-max-xs-2{
-        width: calc((100% / 12)*2);
-    }
-
-    .col-max-xs-3{
-        width: calc((100% / 12)*3);
-    }
-
-    .col-max-xs-4{
-        width: calc((100% / 12)*4);
-    }
-
-    .col-max-xs-5{
-        width: calc((100% / 12)*5);
-    }
-
-    .col-max-xs-6{
-        width: calc((100% / 12)*6);
-    }
-
-    .col-max-xs-7{
-        width: calc((100% / 12)*7);
-    }
-
-    .col-max-xs-8{
-        width: calc((100% / 12)*8);
-    }
-
-    .col-max-xs-9{
-        width: calc((100% / 12)*9);
-    }
-
-    .col-max-xs-10{
-        width: calc((100% / 12)*10);
-    }
-
-    .col-max-xs-11{
-        width: calc((100% / 12)*11);
-    }
-
-    .col-max-xs-12{
-        width: calc((100% / 12)*12);
-    }
-}
-
 @media screen and (max-width: 576px){
     .hide-max-sm{
         display: none;
@@ -739,53 +621,20 @@ body{
 
 /* #endregion assets */
 
-/* #region structure */
+/* #region header */
 
-.container{
-    
-    height: calc(100% - 70px);
-    
-}
-
-.bottom{
-    height: 70px;
-    background-color: var(--col-bg-footer);
-}
-
-.main{
-    width: calc(100% - 250px);
-    background-color: var(--col-bg);
-    overflow-y: scroll;
-    scroll-behavior: smooth;
-    scrollbar-width: thin;
-    @media (max-width: 576px) {
-        width: 90%;
-    }
-}
-
-.sidebar{
-    width: 250px;
-    background-color: black;
-    height: 100%;
-    @media (max-width: 576px) {
-        width: 10%;
-        padding: 0.5rem;
-    }
-}
-
-.top{
-    width: 100%;
-    height: 80px;
-    background-color: var(--col-bg-header);
-}
-
-/* #endregion structure */
-
-/* #region top */
-.top>.subcontainer{
+header>.container{
     padding: 2rem 1rem;
-    height: 100%;
-    
+    background-color: var(--col-bg-header);
+    display: inline-block;
+    margin-right: 0;
+    height: 10vh;
+    float: right;
+    width: calc(100% - 250px);
+
+    .d-flex {
+        height: 100%;
+    }
 
     @media (max-width: 576px) {
         width: 90%;
@@ -804,18 +653,24 @@ body{
 .upgrade-btn:hover{
     padding: 1rem;
 }
-/* #endregion top */
 
-/* #region sidebar */
+/* #endregion header */
 
-.sidebar>.subcontainer{
+/* #region nav */
+
+nav>.container{
+    background-color: black;
+    height: 90vh;
+    width: 250px;
+    float: left;
+    display: inline-block;
     padding: 1rem;
     position: relative;
-    height: 100%;
+
     @media (max-width: 576px) {
-        padding: 0;
+        width: 10%;
+        padding: 0.5rem;
     }
-    
 }
 
 .logo-big , .logo-small{
@@ -827,12 +682,8 @@ body{
 }
 
 .icon{
-    
+    margin-bottom: 0.7rem;
     cursor: pointer;
-}
-
-.icon:hover{
-    border-left: 2px solid var(--col-underline);
 }
 
 .icon:hover svg , .icon:hover p{
@@ -841,7 +692,7 @@ body{
 }
 
 .home>p{
-    font-size: 0.8rem;
+    font-size: 1rem;
     font-weight: 700;
     margin-left: 0.5rem;
 }
@@ -851,14 +702,14 @@ body{
 }
 
 .search>p , .library>p , .download>p{
-    font-size: 0.8rem;
+    font-size: 1rem;
     color: var(--secondary);
     margin-left: 0.5rem;
 }
 
 .playlist>h3{
     color: white;
-    font-size: 1rem;
+    font-size: 1.2rem;
     padding-top: 1rem;
 }
 
@@ -869,8 +720,8 @@ body{
     li {
         fill: var(--secondary);
         color: var(--secondary);
-        font-size: 0.8rem;
-        margin-top: 0.3rem;
+        font-size: 1rem;
+        margin-top: 0.5rem;
         cursor: pointer;
 
         p {
@@ -887,7 +738,6 @@ body{
 .profile{
     position: absolute;
     bottom: 0;
-    
 }
 
 .download{
@@ -912,19 +762,25 @@ body{
 }
 
 .user>p{
-    font-size: 0.8rem;
+    font-size: 1rem;
     font-weight: 700;
     margin-left: 0.5rem;
     
 }
 
-/* #endregion sidebar */
+/* #endregion nav */
 
 /* #region main */
 
-.main>.subcontainer{
+main>.container{
+    background-color: var(--col-bg);
+    height: 80vh;
+    float: right;
+    width: calc(100% - 250px);
     padding: 1rem;
-    
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
 
     p {
         color: var(--secondary);
@@ -939,7 +795,7 @@ body{
 .main-title-element{
     color: var(--secondary);
     font-size: 1rem;
-    padding: 0 1rem 0.5rem 1rem;
+    padding: 0 1rem 1rem 1rem;
     cursor: pointer;
 }
 
@@ -1038,8 +894,11 @@ body{
 
 /* #region footer */
 
-.bottom>.subcontainer{
-    height: 100%;
+footer>.container{
+    height: 10vh;
+    background-color: var(--col-bg-footer);
+    width: 100vw;
+    float: left;
     padding: 0.5rem;
 
     div {
@@ -1093,9 +952,6 @@ body{
 
 .play-buttons{
     width: 250px;
-    @media (max-width: 460px){
-        width: 200px;
-    }
     svg {
         fill: #ffffff;
         cursor: pointer;

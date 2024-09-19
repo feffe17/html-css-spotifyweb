@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body class="debu">
+    <!-- header -->
+     <header>
+        <div class="container">
+            <div class="d-flex align-center justify-end">
+                <div class="upgrade-btn cw">EFFETTUA L'UPGRADE</div>
+            </div>
+        </div>
+
+     </header>
+    <!-- /header -->
+
+    <!-- nav -->
+     <nav>
+        <div class="container">
+            <div class="logo-big col-8 hide-max-sm">
+                <img src="./img/logo.svg" width="100%" alt="logo">
+            </div>
+            <div class="logo-small col-12 hide-min-sm show-max-sm">
+                <img src="./img/logo-small.svg" width="100%" alt="logo">
+            </div>
+            <div class="home icon col-12 d-flex align-center">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="30px" fill="currentColor">
+                    <path d="M448 463.746h-149.333v-149.333h-85.334v149.333h-149.333v-315.428l192-111.746 192 110.984v316.19z"/>
+                </svg>
+                <p class="hide-max-sm cw">Home</p>
+            </div>
+            <div class="search icon col-12 d-flex align-center">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="30px" fill="currentColor">
+                    <path d="M349.714 347.937l93.714 109.969-16.254 13.969-93.969-109.969q-48.508 36.825-109.207 36.825-36.826 0-70.476-14.349t-57.905-38.603-38.603-57.905-14.349-70.476 14.349-70.476 38.603-57.905 57.905-38.603 70.476-14.349 70.476 14.349 57.905 38.603 38.603 57.905 14.349 70.476q0 37.841-14.73 71.619t-40.889 58.921zM224 377.397q43.428 0 80.254-21.461t58.286-58.286 21.461-80.254-21.461-80.254-58.286-58.285-80.254-21.46-80.254 21.46-58.285 58.285-21.46 80.254 21.46 80.254 58.285 58.286 80.254 21.461z" fill-rule="evenodd"/>
+                </svg>
+                <p class="hide-max-sm">Cerca</p>
+            </div>
+            <div class="library icon col-12 d-flex align-center">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="30px" fill="currentColor">
+                    <path d="M291.301 81.778l166.349 373.587-19.301 8.635-166.349-373.587zM64 463.746v-384h21.334v384h-21.334zM192 463.746v-384h21.334v384h-21.334z"/>
+                </svg>
+                <p class="hide-max-sm">La Tua Libreria</p>
+            </div>
+            <div class="playlist col-12 hide-max-sm">
+                <h3>PLAYLIST</h3>
+                <ul>
+                    <li class="d-flex align-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="35px" height="35px" fill="currentColor" class="" viewBox="0 0 16 16">
+                            <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm6.5 4.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3a.5.5 0 0 1 1 0"/>
+                        </svg>
+                        <p>Crea Playlist</p>
+                    </li>
+                    <li class="d-flex align-center">
+                        <p>Nome Playlist</p>
+                    </li>
+                    <li class="d-flex align-center">
+                        <p>Nome Playlist</p>
+                    </li>
+                    <li class="d-flex align-center">
+                        <p>Nome Playlist</p>
+                    </li>
+                    <li class="d-flex align-center">
+                        <p>Nome Playlist</p>
+                    </li>
+                    <li class="d-flex align-center">
+                        <p>Nome Playlist</p>
+                    </li>
+                    <li class="d-flex align-center">
+                        <p>Nome Playlist</p>
+                    </li>
+                    <li class="d-flex align-center">
+                        <p>Nome Playlist</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="profile col-10">
+                <div class="download d-flex align-center col-10">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20px" fill="currentColor">
+                        <path d="M12 11.657V6h-1v5.65L9.076 9.414l-.758.65 3.183 3.702 3.195-3.7-.758-.653L12 11.657zM11.5 2C7.358 2 4 5.358 4 9.5c0 4.142 3.358 7.5 7.5 7.5 4.142 0 7.5-3.358 7.5-7.5C19 5.358 15.642 2 11.5 2zm0 14C7.916 16 5 13.084 5 9.5S7.916 3 11.5 3 18 5.916 18 9.5 15.084 16 11.5 16z" fill-rule="evenodd"/>
+                    </svg>
+                    <p class="hide-max-sm">Installa app</p>
+                </div>
+                <div class="user d-flex align-center col-10">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 90" width="30px" fill="currentColor">
+                        <path d="M67.74 61.78l-14.5-8.334c-.735-.422-1.24-1.145-1.385-1.98-.145-.835.088-1.685.638-2.33l5.912-6.93c3.747-4.378 5.81-9.967 5.81-15.737v-2.256c0-6.668-2.792-13.108-7.658-17.67C51.622 1.92 45.17-.386 38.392.054c-12.677.82-22.607 11.772-22.607 24.934v1.483c0 5.77 2.063 11.36 5.81 15.736l5.912 6.933c.55.644.783 1.493.638 2.33-.143.834-.648 1.556-1.383 1.98l-14.494 8.33C4.7 66.077 0 74.15 0 82.844v6.76h3.333v-6.76c0-7.5 4.055-14.46 10.59-18.174l14.5-8.334c1.597-.918 2.692-2.487 3.007-4.302.315-1.815-.19-3.66-1.387-5.06l-5.913-6.936c-3.23-3.775-5.01-8.594-5.01-13.57v-1.484c0-11.41 8.562-20.9 19.488-21.608 5.85-.377 11.415 1.61 15.67 5.598 4.26 3.992 6.605 9.404 6.605 15.24v2.254c0 4.976-1.778 9.796-5.01 13.57l-5.915 6.935c-1.195 1.4-1.7 3.246-1.386 5.06.313 1.816 1.41 3.385 3.008 4.303l14.507 8.338c6.525 3.71 10.58 10.67 10.58 18.17v6.76H80v-6.76c0-8.695-4.7-16.768-12.26-21.063z" fill-rule="evenodd"/>
+                    </svg>
+                    <p class="hide-max-sm cw">John Doe</p>
+                </div>
+            </div>
+        </div>
+
+
+     </nav>
+    <!-- /nav -->
+
+    <!-- main -->
+     <main>
+        <div class="container">
+            <div class="row justify-center align-center">
+                <div class="col-max-sm-3 col-min-sm-4 col-min-md-4 col-lg-20 col-xl-element d-flex justify-center align-center main-title-element">IN EVIDENZA</div>
+                <div class="col-max-sm-3 col-min-sm-4 col-min-md-4 col-lg-20 col-xl-element d-flex justify-center align-center main-title-element">PODCAST</div>
+                <div class="col-max-sm-3 col-min-sm-4 col-min-md-4 col-lg-20 col-xl-element d-flex justify-center align-center main-title-element">CLASSIFICHE</div>
+                <div class="col-max-sm-3 col-min-sm-4 col-min-md-4 col-lg-20 col-xl-element d-flex justify-center align-center main-title-element">GENERI E MOOD</div>
+                <div class="col-max-sm-3 col-min-sm-4 col-min-md-4 col-lg-20 col-xl-element d-flex justify-center align-center main-title-element">NUOVE USCITE</div>
+                <div class="col-max-sm-3 col-min-sm-4 col-min-md-4 col-lg-20 col-xl-element d-flex justify-center align-center main-title-element">SCOPRI</div>
+            </div>
+            <h2 class="cw">Recently played</h2>
+            <div class="row">
+                <div class="col-max-sm-6 col-min-sm-6 col-min-md-3 col-lg-2 song-box">
+                    <div class="song heavy-metal col-12">
+                        <div class="song-dimmer justify-center align-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="3rem" height="3rem" fill="#ffffff" class="" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                                <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 class="col-12 cw song-title">Heavy Metal</h3>
+                    <p class="col-12 song-desc">subtitle</p>
+                </div>
+                <div class="col-max-sm-6 col-min-sm-6 col-min-md-3 col-lg-2 song-box">
+                    <div class="song stranger-things col-12">
+                        <div class="song-dimmer justify-center align-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="3rem" height="3rem" fill="#ffffff" class="" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                                <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 class="col-12 cw song-title">Stranger Things, Vol.1 (a Netflix Original Series Soundtrack)</h3>
+                    <p class="col-12 song-desc">Kyle Dixon & Michael Stein</p>
+                </div>
+                <div class="col-max-sm-6 col-min-sm-6 col-min-md-3 col-lg-2 song-box">
+                    <div class="song quiet-place col-12">
+                        <div class="song-dimmer justify-center align-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="3rem" height="3rem" fill="#ffffff" class="" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                                <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 class="col-12 cw song-title">A quiet place</h3>
+                    <p class="col-12 song-desc">subtitle</p>
+                </div>
+                <div class="col-max-sm-6 col-min-sm-6 col-min-md-3 col-lg-2 song-box">
+                    <div class="song split col-12">
+                        <div class="song-dimmer justify-center align-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="3rem" height="3rem" fill="#ffffff" class="" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                                <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 class="col-12 cw song-title">Split</h3>
+                    <p class="col-12 song-desc">subtitle</p>
+                </div>
+                <div class="col-max-sm-6 col-min-sm-6 col-min-md-3 col-lg-2 song-box">
+                    <div class="song wellness col-12">
+                        <div class="song-dimmer justify-center align-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="3rem" height="3rem" fill="#ffffff" class="" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                                <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 class="col-12 cw song-title">A cure for wellness</h3>
+                    <p class="col-12 song-desc">subtitle</p>
+                </div>
+                <div class="col-max-sm-6 col-min-sm-6 col-min-md-3 col-lg-2 song-box">
+                    <div class="song sinister col-12">
+                        <div class="song-dimmer justify-center align-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="3rem" height="3rem" fill="#ffffff" class="" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                                <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 class="col-12 cw song-title">Sinister</h3>
+                    <p class="col-12 song-desc">subtitle</p>
+                </div>
+            </div>
+            <h2 class="cw">Creato per John Doe</h2>
+            <p>Più ascolti, più accurati saranno i suggerimenti</p>
+            <div class="row">
+                <div class="col-max-sm-6 col-min-sm-6 col-min-md-3 col-lg-2 song-box">
+                    <div class="song release-radar col-12">
+                        <div class="song-dimmer justify-center align-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="3rem" height="3rem" fill="#ffffff" class="" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                                <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 class="col-12 cw song-title">Release Radar</h3>
+                    
+                </div>
+                <div class="col-max-sm-6 col-min-sm-6 col-min-md-3 col-lg-2 song-box">
+                    <div class="song daily-mix col-12">
+                        <div class="song-dimmer justify-center align-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="3rem" height="3rem" fill="#ffffff" class="" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                                <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 class="col-12 cw song-title">Daily Mix 1</h3>
+                </div>
+            </div>
+            <h2 class="cw">Artisti più popolari</h2>
+            <p>Più ascolti, più accurati saranno i suggerimenti</p>
+            <div class="row">
+                <div class="col-max-sm-6 col-min-sm-6 col-min-md-3 col-lg-2 song-box">
+                    <div class="song circule youg col-12">
+                        <div class="song-dimmer circule justify-center align-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="3rem" height="3rem" fill="#ffffff" class="" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                                <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 class="col-12 cw song-title">YOUG</h3>                    
+                </div>
+                <div class="col-max-sm-6 col-min-sm-6 col-min-md-3 col-lg-2 song-box">
+                    <div class="song circule einaudi col-12">
+                        <div class="song-dimmer circule justify-center align-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="3rem" height="3rem" fill="#ffffff" class="" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                                <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 class="col-12 cw song-title">EINAUDI</h3>
+                </div>
+            </div>
+        </div>
+     </main>
+    <!-- /main -->
+
+    <!-- footer -->
+     <footer>
+        <div class="container d-flex justify-between">
+            <div class="left-box col-max-md-3 col-min-md-4 d-flex align-center ">
+                <img class="show-min-md hide-max-md" src="./img/sinister.jpeg" height="100%" alt="anteprima">
+                <div>
+                    <h5 class="cw">Sinister</h5>
+                    <p class="autors">Brano Nome</p>
+                </div>
+                <div class="d-flex gap-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="2rem" height="2rem" fill="currentColor" class="bi-heart" viewBox="0 0 16 16">
+                        <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="2rem" height="2rem" fill="currentColor" class="hide-max-md" viewBox="0 0 16 16">
+                        <path d="M.54 3.87.5 3a2 2 0 0 1 2-2h3.672a2 2 0 0 1 1.414.586l.828.828A2 2 0 0 0 9.828 3h3.982a2 2 0 0 1 1.992 2.181l-.637 7A2 2 0 0 1 13.174 14H2.826a2 2 0 0 1-1.991-1.819l-.637-7a2 2 0 0 1 .342-1.31zM2.19 4a1 1 0 0 0-.996 1.09l.637 7a1 1 0 0 0 .995.91h10.348a1 1 0 0 0 .995-.91l.637-7A1 1 0 0 0 13.81 4zm4.69-1.707A1 1 0 0 0 6.172 2H2.5a1 1 0 0 0-1 .981l.006.139q.323-.119.684-.12h5.396z"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="center-box d-flex col-max-md-4 col-min-md-6 justify-between align-center flex-column">
+                <div class="d-flex justify-between align-center play-buttons">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1rem" height="1rem" fill="currentColor" class="" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M0 3.5A.5.5 0 0 1 .5 3H1c2.202 0 3.827 1.24 4.874 2.418.49.552.865 1.102 1.126 1.532.26-.43.636-.98 1.126-1.532C9.173 4.24 10.798 3 13 3v1c-1.798 0-3.173 1.01-4.126 2.082A9.6 9.6 0 0 0 7.556 8a9.6 9.6 0 0 0 1.317 1.918C9.828 10.99 11.204 12 13 12v1c-2.202 0-3.827-1.24-4.874-2.418A10.6 10.6 0 0 1 7 9.05c-.26.43-.636.98-1.126 1.532C4.827 11.76 3.202 13 1 13H.5a.5.5 0 0 1 0-1H1c1.798 0 3.173-1.01 4.126-2.082A9.6 9.6 0 0 0 6.444 8a9.6 9.6 0 0 0-1.317-1.918C4.172 5.01 2.796 4 1 4H.5a.5.5 0 0 1-.5-.5"/>
+                        <path d="M13 5.466V1.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384l-2.36 1.966a.25.25 0 0 1-.41-.192m0 9v-3.932a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384l-2.36 1.966a.25.25 0 0 1-.41-.192"/>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1rem" height="1rem" fill="currentColor" class="" viewBox="0 0 16 16">
+                        <path d="M4 4a.5.5 0 0 1 1 0v3.248l6.267-3.636c.54-.313 1.232.066 1.232.696v7.384c0 .63-.692 1.01-1.232.697L5 8.753V12a.5.5 0 0 1-1 0z"/>
+                    </svg>
+                    <div class="col-3 d-flex justify-center align-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1.5rem" height="1.5rem" fill="#ffffff" class="play-btn" viewBox="0 0 16 16">
+                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                            <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445"/>
+                        </svg>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1rem" height="1rem" fill="currentColor" class="" viewBox="0 0 16 16">
+                        <path d="M12.5 4a.5.5 0 0 0-1 0v3.248L5.233 3.612C4.693 3.3 4 3.678 4 4.308v7.384c0 .63.692 1.01 1.233.697L11.5 8.753V12a.5.5 0 0 0 1 0z"/>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1rem" height="1rem" fill="currentColor" class="" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M8 3a5 5 0 1 0 4.546 2.914.5.5 0 0 1 .908-.417A6 6 0 1 1 8 2z"/>
+                        <path d="M8 4.466V.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384L8.41 4.658A.25.25 0 0 1 8 4.466"/>
+                    </svg>
+                </div>
+                <div class="progression-bar col-12 d-flex gap-1 align-center">
+                    <div class="current-time cw col-1">0:25</div>
+                    <div class="bar col-9">
+                        <div class="current-bar"></div>
+                        <div class="current-point"></div>
+                    </div>
+                    <div class="total-time cw col-1">4:35</div>
+                </div>
+            </div>
+            <div class="right-box col-max-sm-3 col-max-md-2 col-min-md-3 d-flex justify-end align-center gap-1">
+                <div class="col-1 show-min-md hide-max-md">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="#ffffff" class="" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M5 11.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5m-3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2m0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2m0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2"/>
+                    </svg>
+                </div>
+                <div class="col-1 show-min-md hide-max-md">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="#ffffff" class="" viewBox="0 0 16 16">
+                        <path d="M0 4s0-2 2-2h12s2 0 2 2v6s0 2-2 2h-4q0 1 .25 1.5H11a.5.5 0 0 1 0 1H5a.5.5 0 0 1 0-1h.75Q6 13 6 12H2s-2 0-2-2zm1.398-.855a.76.76 0 0 0-.254.302A1.5 1.5 0 0 0 1 4.01V10c0 .325.078.502.145.602q.105.156.302.254a1.5 1.5 0 0 0 .538.143L2.01 11H14c.325 0 .502-.078.602-.145a.76.76 0 0 0 .254-.302 1.5 1.5 0 0 0 .143-.538L15 9.99V4c0-.325-.078-.502-.145-.602a.76.76 0 0 0-.302-.254A1.5 1.5 0 0 0 13.99 3H2c-.325 0-.502.078-.602.145"/>
+                    </svg>
+                </div>
+                <div class="col-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="#ffffff" class="bi-volume hide-max-sm" viewBox="0 0 16 16">
+                        <path d="M11.536 14.01A8.47 8.47 0 0 0 14.026 8a8.47 8.47 0 0 0-2.49-6.01l-.708.707A7.48 7.48 0 0 1 13.025 8c0 2.071-.84 3.946-2.197 5.303z"/>
+                        <path d="M10.121 12.596A6.48 6.48 0 0 0 12.025 8a6.48 6.48 0 0 0-1.904-4.596l-.707.707A5.48 5.48 0 0 1 11.025 8a5.48 5.48 0 0 1-1.61 3.89z"/>
+                        <path d="M10.025 8a4.5 4.5 0 0 1-1.318 3.182L8 10.475A3.5 3.5 0 0 0 9.025 8c0-.966-.392-1.841-1.025-2.475l.707-.707A4.5 4.5 0 0 1 10.025 8M7 4a.5.5 0 0 0-.812-.39L3.825 5.5H1.5A.5.5 0 0 0 1 6v4a.5.5 0 0 0 .5.5h2.325l2.363 1.89A.5.5 0 0 0 7 12zM4.312 6.39 6 5.04v5.92L4.312 9.61A.5.5 0 0 0 4 9.5H2v-3h2a.5.5 0 0 0 .312-.11"/>
+                    </svg>
+                </div>
+                <div class="col-max-sm-12 col-max-md-10 col-min-md-6">
+                    <div class="progression-bar col-12 d-flex align-center">
+                        <div class="bar col-12">
+                            <div class="current-bar"></div>
+                            <div class="current-point"></div>
+                        </div>     
+                    </div>
+                </div>
+            </div>
+        </div>
+     </footer>
+    <!-- /footet -->
+    
+</body>
+</html>
