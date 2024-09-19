@@ -899,6 +899,93 @@ footer>.container{
     background-color: var(--col-bg-footer);
     width: 100vw;
     float: left;
+    padding: 0.5rem;
+
+    div {
+
+        h5 {
+            font-size: 1rem;
+        }
+
+
+
+        .gap-1 {
+            svg {
+                fill: var(--secondary);
+                cursor: pointer;
+            }
+            svg:hover {
+                fill: white;
+            }
+        }
+    }
+    .left-box{
+        gap: 1rem;
+    }
+}
+
+
+
+.autors{
+    color: var(--secondary);
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+
+.autors:hover{
+    color: white;
+    text-decoration: underline;
+}
+
+.play-buttons{
+    width: 300px;
+    svg {
+        fill: #ffffff;
+        cursor: pointer;
+    }
+    .col-3{
+        aspect-ratio: 1.5/0.7;
+        .play-btn:hover {
+            width: 1.7rem;
+            height: 1.7rem;
+        }
+    }
+    }
+
+.current-time , .total-time{
+    font-size: 0.6rem;
+}
+
+.bar{
+    height: 0.3rem;
+    background-color: var(--secondary);
+    border-radius: 25px;
+    cursor: pointer;
+    display: flex;
+}
+
+.current-bar{
+    height: 100%;
+    width: 25%;
+    background-color: var(--primary);
+    border-radius: 25px;
+    
+}
+
+.current-point{
+    height: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    box-shadow: 0 0 0px 5px white;
+    display: none;
+}
+
+.bar:hover .current-bar{
+    background-color: var(--col-underline);
+}
+
+.bar:hover .current-point{
+    display: block;
 }
 
 /* #endregion footer */
